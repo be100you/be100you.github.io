@@ -144,8 +144,8 @@ body:not(.pt) :lang(pt) {
 
 .masthead h1 {
   font-family: 'Comfortaa';
-  font-size: 15vw;
-  line-height: 3rem;
+  font-size: 13vw;
+  line-height: 4rem;
   letter-spacing: 0.15rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2));
   -webkit-text-fill-color: transparent;
