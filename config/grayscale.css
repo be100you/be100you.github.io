@@ -1,3 +1,9 @@
+body:not(.en) :lang(en), 
+body:not(.it) :lang(it), 
+body:not(.fr) :lang(fr) { 
+    display: none; 
+}
+
 .project-img {
   transition: .5s ease;
   backface-visibility: hidden;
