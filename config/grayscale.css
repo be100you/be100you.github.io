@@ -1,6 +1,7 @@
 body:not(.en) :lang(en), 
+body:not(.fr) :lang(fr), 
 body:not(.it) :lang(it), 
-body:not(.fr) :lang(fr) { 
+body:not(.pt) :lang(pt) { 
     display: none; 
 }
 
