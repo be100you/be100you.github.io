@@ -1,8 +1,8 @@
-body:not(.en) :lang(en), 
-body:not(.fr) :lang(fr), 
-body:not(.it) :lang(it), 
-body:not(.pt) :lang(pt) { 
-    display: none; 
+body:not(.en) :lang(en),
+body:not(.fr) :lang(fr),
+body:not(.it) :lang(it),
+body:not(.pt) :lang(pt) {
+    display: none;
 }
 
 .project-img {
@@ -144,9 +144,9 @@ body:not(.pt) :lang(pt) {
 
 .masthead h1 {
   font-family: 'Comfortaa';
-  font-size: 10vw;
-  line-height: 2.5rem;
-  letter-spacing: 0.25rem;
+  font-size: 15vw;
+  line-height: 3rem;
+  letter-spacing: 0.15rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -159,8 +159,8 @@ body:not(.pt) :lang(pt) {
 
 @media (min-width: 375px) {
   .masthead h1 {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2.9rem;
+    line-height: 2.9rem;
   }
 }
 
