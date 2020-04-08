@@ -5,6 +5,21 @@ body:not(.pt) :lang(pt) {
     display: none;
 }
 
+.obliqueline {
+  position: relative;
+}
+.obliqueline:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 40%;
+  right: 0;
+  border-top: 4px solid;
+  border-color: inherit;
+  transform: rotate(-10deg);
+  color: #ff000099;
+}
+
 .project-img {
   transition: .5s ease;
   backface-visibility: hidden;
