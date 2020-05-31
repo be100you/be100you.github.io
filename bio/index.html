@@ -7,6 +7,41 @@
     <title>be100you.com</title>
     <link rel="stylesheet" href="../config/list.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3"></script>
+
+    <script>
+    (function() {
+      var stripe = Stripe('pk_test_MVkacuQU4ajzCEDvDW5MJGAx000lKyyDOx');
+
+      var checkoutButton = document.getElementById('checkout-button-price_HMSjXAyO90cY64');
+      checkoutButton.addEventListener('click', function () {
+        // When the customer clicks on the button, redirect
+        // them to Checkout.
+        stripe.redirectToCheckout({
+          lineItems: [{price: 'price_HMSjXAyO90cY64', quantity: 1}],
+          mode: 'payment',
+          // Do not rely on the redirect to the successUrl for fulfilling
+          // purchases, customers may not always reach the success_url after
+          // a successful payment.
+          // Instead use one of the strategies described in
+          // https://stripe.com/docs/payments/checkout/fulfillment
+          successUrl: 'https://be100you.com/success',
+          cancelUrl: 'https://be100you.com/canceled',
+        })
+        .then(function (result) {
+          if (result.error) {
+            // If `redirectToCheckout` fails due to a browser or network
+            // error, display the localized error message to your customer.
+            var displayError = document.getElementById('error-message');
+            displayError.textContent = result.error.message;
+          }
+        });
+      });
+    })();
+    </script>
+
 </head>
 <body>
     <div class="author-photo">
@@ -15,6 +50,8 @@
         @be100you
         <br>
         Explore 100% of your potential!
+        <br>
+        <div id="error-message"></div>
     </div>
     <ul>
         <!--<li class="i-b">
@@ -65,7 +102,7 @@
                 <div class='logo'>
                     <i class='fas fa-dumbbell fa-2x'></i>
                 </div>
-                <p class='title'>
+                <p class='title' id="checkout-button-price_HMSjXAyO90cY64" role="link">
                     Programme d'entraînement
                 </p>
             </a>
