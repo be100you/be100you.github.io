@@ -5,6 +5,40 @@ body:not(.pt) :lang(pt) {
     display: none;
 }
 
+h5 {
+  font-size: 1.15rem;
+}
+
+#rest {
+    background-color: #103649a3;
+}
+
+#nutrition {
+    background-color: #0e341296;
+}
+
+#exercise {
+    background-color: #301708c4;
+}
+
+.btn-exercise,
+.btn-exercise:hover,
+.btn-exercise:active,
+.btn-exercise:visited,
+.btn-exercise:focus {
+    background-color: #8e3111 !important;
+    border-color: #8e3111 !important;
+}
+
+.btn-nutrition,
+.btn-nutrition:hover,
+.btn-nutrition:active,
+.btn-nutrition:visited,
+.btn-nutrition:focus {
+    background-color: #0f5011 !important;
+    border-color: #0f5011 !important;
+}
+
 .obliqueline {
   position: relative;
 }
@@ -264,13 +298,13 @@ body:not(.pt) :lang(pt) {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid var(--light);
+    //border-left: 0.5rem solid var(--light);
   }
 }
 
 .projects-section .project-text {
   padding: 3rem;
-  font-size: 90%;
+  font-size: 80%;
 }
 
 @media (min-width: 992px) {

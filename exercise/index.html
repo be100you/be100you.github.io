@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>be100you.com</title>
+    <link rel="stylesheet" href="../config/list.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+    <link rel="mask-icon" href="../icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../icon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../icon/browserconfig.xml">
+    <meta name="theme-color" content="#141414">
+
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3"></script>
+</head>
+<body>
+    <div class="author-photo">
+        <img src="../img/profile-circle.png">
+        <br>
+        @be100you
+        <br>
+        Explorez 100% de votre potentiel!
+        <br>
+        <div id="error-message"></div>
+    </div>
+
+    <br>
+    <h2 style="text-align: center;">
+        Programme d'Entraînement
+    </h2>
+    <br>
+
+    <ul>
+        <li class="i-b" style="background: linear-gradient(to right, #ca4444, #a57621);">
+            <a class="js-scroll-trigger" href="#pack">
+                <span style="background-image: url('../img/gym.jpg'); background-size: cover; background-position: center;"></span>
+                <div>
+                    <h2>Un programme adapté aux besoins individuels</h2>
+                    <p>Votre entraînement à la salle de sport sera personnalisé à votre corps et objectifs, ainsi qu'à votre disponibilité en temps et matériel !</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <br>
+    <h3 style="text-align: center;" id="pack">
+        Vous aurez :
+    </h3>
+    <br>
+
+    <ul>
+        <li class="i-s">
+            <a class="js-scroll-trigger" href="#exercise">
+                <div class='logo'><i class='fas fa-dumbbell fa-2x'></i></div>
+                <p class='title'>Plan complet d'exercices</p>
+            </a>
+        </li>
+        <li class="i-s">
+            <a href="#alimentation">
+                <div class='logo'><i class='fas fa-apple-alt fa-2x'></i></div>
+                <p class='title'>Conseils alimentaires</p>
+            </a>
+        </li>
+        <li class="i-s">
+            <a href="#interview">
+                <div class='logo'><i class='fas fa-user-friends fa-2x'></i></div>
+                <p class='title'>Entretien avec coach</p>
+            </a>
+        </li>
+        <li class="i-s">
+            <a href="#chat">
+                <div class='logo'><i class='fab fa-whatsapp fa-2x'></i></div>
+                <p class='title'>Suivi whatsapp</p>
+            </a>
+        </li>
+    </ul>
+
+    <br>
+    <ul>
+        <li class="i-s shake" style="background: green; box-shadow: 0px 0px 10px #1eff00; width: 160px;">
+            <a id="myBtn" style="cursor: pointer;">
+                <div class='logo'><i class='fas fa-euro-sign fa-2x'></i></div>
+                <p class='title'>ACHETER</p>
+            </a>
+        </li>
+    </ul>
+    <br>
+
+    <h3 style="text-align: center;" id="pack">
+        En détails :
+    </h3>
+
+    <ul>
+        <li class="i-b" id="exercise">
+            <a>
+                <span class="rightfloat" style="background-image: url('../img/planner.jpg'); background-size: cover; background-position: center;"></span>
+                <div>
+                    <h2>Plan complet d'exercices</h2>
+                    <p>• Document PDF complet avec vos exercices personnalisés, nombre de séries, répétitions, temps de repos, et conseils d'exécution</p>
+                    <p>• Ressources explicatives (articles, vidéos...) pour une exécution correcte</p>
+                </div>
+            </a>
+        </li>
+        <li class="i-b" id="alimentation">
+            <a>
+                <span class="rightfloat" style="background-image: url('../img/food.jpg'); background-size: cover; background-position: center;"></span>
+                <div>
+                    <h2>Conseils alimentaires</h2>
+                    <p>• Prise en compte des préférences et besoins alimentaires individuels</p>
+                    <p>• Suggestions sur la répartition des repas et macronutriments</p>
+                </div>
+            </a>
+        </li>
+        <li class="i-b" id="interview">
+            <a>
+                <span class="rightfloat" style="background-image: url('../img/call.jpg'); background-size: cover; background-position: center;"></span>
+                <div>
+                    <h2>Entretien avec coach</h2>
+                    <p>• Étude des mesures corporelles</p>
+                    <p>• Définition des objectifs à court et long termes</p>
+                    <p>• Discussion sur la disponibilité temporelle et des équipements</p>
+                </div>
+            </a>
+        </li>
+        <li class="i-b" id="chat">
+            <a>
+                <span class="rightfloat" style="background-image: url('../img/chat.jpg'); background-size: cover; background-position: center;"></span>
+                <div>
+                    <h2>Suivi whatsapp</h2>
+                    <p>• Adaptations mineures du programme d'entraînement</p>
+                    <p>• Réponse aux questions sous 48h</p>
+                    <p>• Partage de conseils et promotions</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <br>
+    <ul>
+        <li class="i-s shake" style="background: green; box-shadow: 0px 0px 10px #1eff00; width: 160px;">
+            <a id="myBtn2" style="cursor: pointer;">
+                <div class='logo'><i class='fas fa-euro-sign fa-2x'></i></div>
+                <p class='title'>ACHETER</p>
+            </a>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+
+    <center><script>document.write(new Date().getFullYear())</script> &copy; be100you</center>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <br>
+            <center>Options disponibles :</center>
+            <br>
+            <ul>
+                <li class="i-s" style="background: green; box-shadow: 0px 0px 10px #1eff00; width: 200px;">
+                    <a id="checkout-button-price_1GqUIpCdJrGKJNulDqgNtBv0" role="link" style="cursor: pointer;">
+                        <div class='logo'><i class='fas fa-euro-sign fa-2x'></i></div>
+                        <p class='title'>1 x 49€<br><br>Achetez un programme d'entraînement</p>
+                    </a>
+                </li>
+            </ul>
+            <br>
+            <ul>
+                <li class="i-s" style="background: #004396; box-shadow: 0px 0px 10px #177fff; width: 200px;">
+                    <a id="checkout-button-price_1GqUIpCdJrGKJNuls2Uf1QXZ" role="link" style="cursor: pointer;">
+                        <div class='logo'><i class='fas fa-sync fa-2x'></i></div>
+                        <p class='title'>Abonnement à<br>prix réduit : 39€<br>par programme<br><br>Recevez un nouveau programme toutes les 8 semaines</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+    (function() {
+      var stripe = Stripe('pk_live_pTG7jzIFLtfkaAeHeb09TL8g00QSrQ9X5K');
+
+      var checkoutButton = document.getElementById('checkout-button-price_1GqUIpCdJrGKJNulDqgNtBv0');
+      checkoutButton.addEventListener('click', function () {
+        // When the customer clicks on the button, redirect
+        // them to Checkout.
+        stripe.redirectToCheckout({
+          lineItems: [{price: 'price_1GqUIpCdJrGKJNulDqgNtBv0', quantity: 1}],
+          mode: 'payment',
+          // Do not rely on the redirect to the successUrl for fulfilling
+          // purchases, customers may not always reach the success_url after
+          // a successful payment.
+          // Instead use one of the strategies described in
+          // https://stripe.com/docs/payments/checkout/fulfillment
+          successUrl: 'https://be100you.com',
+          cancelUrl: 'https://be100you.com/exercise',
+        })
+        .then(function (result) {
+          if (result.error) {
+            // If `redirectToCheckout` fails due to a browser or network
+            // error, display the localized error message to your customer.
+            var displayError = document.getElementById('error-message');
+            displayError.textContent = result.error.message;
+          }
+        });
+      });
+    })();
+    </script>
+
+    <script>
+    (function() {
+      var stripe = Stripe('pk_live_pTG7jzIFLtfkaAeHeb09TL8g00QSrQ9X5K');
+
+      var checkoutButton = document.getElementById('checkout-button-price_1GqUIpCdJrGKJNuls2Uf1QXZ');
+      checkoutButton.addEventListener('click', function () {
+        // When the customer clicks on the button, redirect
+        // them to Checkout.
+        stripe.redirectToCheckout({
+          lineItems: [{price: 'price_1GqUIpCdJrGKJNuls2Uf1QXZ', quantity: 1}],
+          mode: 'subscription',
+          // Do not rely on the redirect to the successUrl for fulfilling
+          // purchases, customers may not always reach the success_url after
+          // a successful payment.
+          // Instead use one of the strategies described in
+          // https://stripe.com/docs/payments/checkout/fulfillment
+          successUrl: 'https://be100you.com',
+          cancelUrl: 'https://be100you.com/exercise',
+        })
+        .then(function (result) {
+          if (result.error) {
+            // If `redirectToCheckout` fails due to a browser or network
+            // error, display the localized error message to your customer.
+            var displayError = document.getElementById('error-message');
+            displayError.textContent = result.error.message;
+          }
+        });
+      });
+    })();
+    </script>
+
+    <script src="../config/jquery/jquery.min.js"></script>
+    <script src="config/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../config/jquery-easing/jquery.easing.min.js"></script>
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    var btn2 = document.getElementById("myBtn2");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    btn2.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</body>
+
+</html>
