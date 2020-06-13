@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>be100you.com</title>
+    <link rel="stylesheet" href="../config/list.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+    <link rel="mask-icon" href="../icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../icon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../icon/browserconfig.xml">
+    <meta name="theme-color" content="#141414">
+
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3"></script>
+</head>
+<body>
+    <div class="author-photo">
+        <a class="js-scroll-trigger" href="../bio">
+            <img src="../img/profile-circle.png">
+            <br>
+            @be100you
+            <br>
+            Explorez 100% de votre potentiel!
+            <br>
+        </a>
+        <div id="error-message"></div>
+    </div>
+
+    <br>
+    <h2 style="text-align: center;">
+        Repos & Relaxation
+    </h2>
+    <br>
+
+    <ul>
+        <li class="i-b">
+            <a class="js-scroll-trigger" href="#pack">
+                <span style="background-image: url('../img/meditation.jpg'); background-size: cover; background-position: center;"></span>
+                <div>
+                    <h2>Des contenus et outils pour votre détente et récupération</h2>
+                    <p>Nos corps ont besoin du repos pour  !</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <br>
+    <h3 style="text-align: center;" id="pack">
+        Pour vous aider à vous détendre :
+    </h3>
+    <br>
+
+    <ul>
+        <li class="i-s">
+            <a class="js-scroll-trigger" href="https://www.youtube.com/channel/UCU7bgSLEAQE3FY7UO_OfcKw" target="_blank">
+                <div class='logo'><i class='fab fa-youtube fa-2x'></i></div>
+                <p class='title'>Vidéos YouTube</p>
+            </a>
+        </li>
+        <li class="i-s">
+            <a class="js-scroll-trigger" href="#store">
+                <div class='logo'><i class='fas fa-cart-arrow-down fa-2x'></i></div>
+                <p class='title'>Magasin en ligne</p>
+            </a>
+        </li>
+    </ul>
+
+    <br>
+    <ul>
+        <li class="i-s shake" style="background: #005aff; box-shadow: 0px 0px 10px #00ffff; width: 160px;">
+            <a href="#store" class="js-scroll-trigger">
+                <div class='logo'>
+                    <object data="../img/candle.svg" style="height: 50px; width: 40px; vertical-align: middle;" type="image/svg+xml">
+                        <img src="../img/candle.png" style="height: 50px; width: 40px; vertical-align: middle;" />
+                    </object>
+                </div>
+                <p class='title'>PROMO BOUGIES</p>
+            </a>
+        </li>
+    </ul>
+    <br>
+
+    <h3 style="text-align: center;" id="store">
+        Magasin en ligne :
+    </h3>
+
+    <ul>
+        <li class="i-v">
+            <a id="checkout-button-price_1GqUIpCdJrGKJNulDqgNtBv0" role="link" style="cursor: pointer;">
+                <span style="background-image: url('../img/store/candle-brown.jpg'); background-size: cover; background-position: center;"></span>
+                <div>
+                    <h2 style="text-align: center;">Bougie méditation</h2>
+                    <p><center><b>20 €</b><br>(livraison gratuite)</center></p>
+                </div>
+            </a>
+        </li>
+        <li class="i-v">
+            <a id="checkout-button-price_1GqUIpCdJrGKJNuls2Uf1QXZ" role="link" style="cursor: pointer;">
+                <span style="background-image: url('../img/store/candle-purple.jpg'); background-size: cover; background-position: center;"></span>
+                <div>
+                    <h2 style="text-align: center;">Bougie parfumée</h2>
+                    <p><center><txt class="obliqueline">&nbsp;30 €&nbsp;</txt>&nbsp;&nbsp;&nbsp;<b>15€</b><br>(livraison gratuite)</center></p>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <br>
+    <ul>
+        <li class="i-s shake" style="background: #005aff; box-shadow: 0px 0px 10px #00ffff; width: 160px;">
+            <a href="#store" class="js-scroll-trigger">
+                <div class='logo'>
+                    <object data="../img/candle.svg" style="height: 50px; width: 40px; vertical-align: middle;" type="image/svg+xml">
+                        <img src="../img/candle.png" style="height: 50px; width: 40px; vertical-align: middle;" />
+                    </object>
+                </div>
+                <p class='title'>PROMO BOUGIES</p>
+            </a>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+
+    <center><script>document.write(new Date().getFullYear())</script> &copy; be100you</center>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script>
+    (function() {
+      var stripe = Stripe('pk_live_pTG7jzIFLtfkaAeHeb09TL8g00QSrQ9X5K');
+
+      var checkoutButton = document.getElementById('checkout-button-price_1GqUIpCdJrGKJNulDqgNtBv0');
+      checkoutButton.addEventListener('click', function () {
+        // When the customer clicks on the button, redirect
+        // them to Checkout.
+        stripe.redirectToCheckout({
+          lineItems: [{price: 'price_1GqUIpCdJrGKJNulDqgNtBv0', quantity: 1}],
+          mode: 'payment',
+          // Do not rely on the redirect to the successUrl for fulfilling
+          // purchases, customers may not always reach the success_url after
+          // a successful payment.
+          // Instead use one of the strategies described in
+          // https://stripe.com/docs/payments/checkout/fulfillment
+          successUrl: 'https://be100you.com',
+          cancelUrl: 'https://be100you.com/exercise',
+        })
+        .then(function (result) {
+          if (result.error) {
+            // If `redirectToCheckout` fails due to a browser or network
+            // error, display the localized error message to your customer.
+            var displayError = document.getElementById('error-message');
+            displayError.textContent = result.error.message;
+          }
+        });
+      });
+    })();
+    </script>
+
+    <script>
+    (function() {
+      var stripe = Stripe('pk_live_pTG7jzIFLtfkaAeHeb09TL8g00QSrQ9X5K');
+
+      var checkoutButton = document.getElementById('checkout-button-price_1GqUIpCdJrGKJNuls2Uf1QXZ');
+      checkoutButton.addEventListener('click', function () {
+        // When the customer clicks on the button, redirect
+        // them to Checkout.
+        stripe.redirectToCheckout({
+          lineItems: [{price: 'price_1GqUIpCdJrGKJNuls2Uf1QXZ', quantity: 1}],
+          mode: 'subscription',
+          // Do not rely on the redirect to the successUrl for fulfilling
+          // purchases, customers may not always reach the success_url after
+          // a successful payment.
+          // Instead use one of the strategies described in
+          // https://stripe.com/docs/payments/checkout/fulfillment
+          successUrl: 'https://be100you.com',
+          cancelUrl: 'https://be100you.com/exercise',
+        })
+        .then(function (result) {
+          if (result.error) {
+            // If `redirectToCheckout` fails due to a browser or network
+            // error, display the localized error message to your customer.
+            var displayError = document.getElementById('error-message');
+            displayError.textContent = result.error.message;
+          }
+        });
+      });
+    })();
+    </script>
+
+    <script src="../config/jquery/jquery.min.js"></script>
+    <script src="../config/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../config/grayscale.js"></script>
+</body>
+
+</html>

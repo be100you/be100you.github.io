@@ -23,12 +23,14 @@
 </head>
 <body>
     <div class="author-photo">
-        <img src="../img/profile-circle.png">
-        <br>
-        @be100you
-        <br>
-        Explorez 100% de votre potentiel!
-        <br>
+        <a class="js-scroll-trigger" href="../bio">
+            <img src="../img/profile-circle.png">
+            <br>
+            @be100you
+            <br>
+            Explorez 100% de votre potentiel!
+            <br>
+        </a>
         <div id="error-message"></div>
     </div>
 
@@ -64,19 +66,19 @@
             </a>
         </li>
         <li class="i-s">
-            <a href="#alimentation">
+            <a class="js-scroll-trigger" href="#alimentation">
                 <div class='logo'><i class='fas fa-apple-alt fa-2x'></i></div>
                 <p class='title'>Conseils alimentaires</p>
             </a>
         </li>
         <li class="i-s">
-            <a href="#interview">
+            <a class="js-scroll-trigger" href="#interview">
                 <div class='logo'><i class='fas fa-user-friends fa-2x'></i></div>
                 <p class='title'>Entretien avec coach</p>
             </a>
         </li>
         <li class="i-s">
-            <a href="#chat">
+            <a class="js-scroll-trigger" href="#chat">
                 <div class='logo'><i class='fab fa-whatsapp fa-2x'></i></div>
                 <p class='title'>Suivi whatsapp</p>
             </a>
@@ -86,7 +88,7 @@
     <br>
     <ul>
         <li class="i-s shake" style="background: green; box-shadow: 0px 0px 10px #1eff00; width: 160px;">
-            <a id="myBtn" style="cursor: pointer;">
+            <a class="js-scroll-trigger" id="myBtn" style="cursor: pointer;">
                 <div class='logo'><i class='fas fa-euro-sign fa-2x'></i></div>
                 <p class='title'>ACHETER</p>
             </a>
@@ -146,7 +148,7 @@
     <br>
     <ul>
         <li class="i-s shake" style="background: green; box-shadow: 0px 0px 10px #1eff00; width: 160px;">
-            <a id="myBtn2" style="cursor: pointer;">
+            <a class="js-scroll-trigger" id="myBtn2" style="cursor: pointer;">
                 <div class='logo'><i class='fas fa-euro-sign fa-2x'></i></div>
                 <p class='title'>ACHETER</p>
             </a>
@@ -171,7 +173,7 @@
             <br>
             <ul>
                 <li class="i-s" style="background: green; box-shadow: 0px 0px 10px #1eff00; width: 200px;">
-                    <a id="checkout-button-price_1GqUIpCdJrGKJNulDqgNtBv0" role="link" style="cursor: pointer;">
+                    <a class="js-scroll-trigger" id="checkout-button-price_1GqUIpCdJrGKJNulDqgNtBv0" role="link" style="cursor: pointer;">
                         <div class='logo'><i class='fas fa-euro-sign fa-2x'></i></div>
                         <p class='title'>1 x 49€<br><br>Achetez un programme d'entraînement</p>
                     </a>
@@ -180,7 +182,7 @@
             <br>
             <ul>
                 <li class="i-s" style="background: #004396; box-shadow: 0px 0px 10px #177fff; width: 200px;">
-                    <a id="checkout-button-price_1GqUIpCdJrGKJNuls2Uf1QXZ" role="link" style="cursor: pointer;">
+                    <a class="js-scroll-trigger" id="checkout-button-price_1GqUIpCdJrGKJNuls2Uf1QXZ" role="link" style="cursor: pointer;">
                         <div class='logo'><i class='fas fa-sync fa-2x'></i></div>
                         <p class='title'>Abonnement à<br>prix réduit : 39€<br>par programme<br><br>Recevez un nouveau programme toutes les 8 semaines</p>
                     </a>
@@ -251,10 +253,6 @@
     })();
     </script>
 
-    <script src="../config/jquery/jquery.min.js"></script>
-    <script src="config/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../config/jquery-easing/jquery.easing.min.js"></script>
-
     <script>
     // Get the modal
     var modal = document.getElementById("myModal");
@@ -286,6 +284,10 @@
       }
     }
     </script>
+
+    <script src="../config/jquery/jquery.min.js"></script>
+    <script src="../config/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../config/grayscale.js"></script>
 </body>
 
 </html>
