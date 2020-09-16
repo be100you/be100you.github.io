@@ -28,7 +28,7 @@
             <br>
             @be100you
             <br>
-            Explorez 100% de votre potentiel!
+            Explore 100% de ton potentiel !
             <br>
         </a>
         <div id="error-message"></div>
@@ -175,7 +175,7 @@
                 <li class="i-s" style="background: green; box-shadow: 0px 0px 10px #1eff00; width: 200px;">
                     <a class="js-scroll-trigger" id="checkout-button-price_1HDXdyCdJrGKJNulfsh3hgZX" role="link" style="cursor: pointer;">
                         <div class='logo'><i class='fas fa-euro-sign fa-2x'></i></div>
-                        <p class='title'>1 x 59€<br><br>Achetez un programme d'entraînement</p>
+                        <p class='title'>1 x 68€<br><br>Achetez un programme d'entraînement</p>
                     </a>
                 </li>
             </ul>
@@ -184,74 +184,18 @@
                 <li class="i-s" style="background: #004396; box-shadow: 0px 0px 10px #177fff; width: 200px;">
                     <a class="js-scroll-trigger" id="checkout-button-price_1HDXddCdJrGKJNulftynT1dc" role="link" style="cursor: pointer;">
                         <div class='logo'><i class='fas fa-sync fa-2x'></i></div>
-                        <p class='title'>Abonnement à<br>prix réduit : 49€<br>par programme<br><br>Recevez un nouveau programme toutes les 8 semaines</p>
+                        <p class='title'>Abonnement à<br>prix réduit : 58€<br>par programme<br><br>Recevez un nouveau programme toutes les 8 semaines</p>
                     </a>
                 </li>
             </ul>
         </div>
     </div>
 
+    <!--
     <script>
-    (function() {
-      var stripe = Stripe('pk_live_pTG7jzIFLtfkaAeHeb09TL8g00QSrQ9X5K');
-
-      var checkoutButton = document.getElementById('checkout-button-price_1HDXddCdJrGKJNulftynT1dc');
-      checkoutButton.addEventListener('click', function () {
-        // When the customer clicks on the button, redirect
-        // them to Checkout.
-        stripe.redirectToCheckout({
-          lineItems: [{price: 'price_1HDXddCdJrGKJNulftynT1dc', quantity: 1}],
-          mode: 'subscription',
-          // Do not rely on the redirect to the successUrl for fulfilling
-          // purchases, customers may not always reach the success_url after
-          // a successful payment.
-          // Instead use one of the strategies described in
-          // https://stripe.com/docs/payments/checkout/fulfillment
-          successUrl: 'https://be100you.com/success',
-          cancelUrl: 'https://be100you.com/canceled',
-        })
-        .then(function (result) {
-          if (result.error) {
-            // If `redirectToCheckout` fails due to a browser or network
-            // error, display the localized error message to your customer.
-            var displayError = document.getElementById('error-message');
-            displayError.textContent = result.error.message;
-          }
-        });
-      });
-    })();
+    STRIPE
     </script>
-
-    <script>
-    (function() {
-      var stripe = Stripe('pk_live_pTG7jzIFLtfkaAeHeb09TL8g00QSrQ9X5K');
-
-      var checkoutButton = document.getElementById('checkout-button-price_1HDXdyCdJrGKJNulfsh3hgZX');
-      checkoutButton.addEventListener('click', function () {
-        // When the customer clicks on the button, redirect
-        // them to Checkout.
-        stripe.redirectToCheckout({
-          lineItems: [{price: 'price_1HDXdyCdJrGKJNulfsh3hgZX', quantity: 1}],
-          mode: 'payment',
-          // Do not rely on the redirect to the successUrl for fulfilling
-          // purchases, customers may not always reach the success_url after
-          // a successful payment.
-          // Instead use one of the strategies described in
-          // https://stripe.com/docs/payments/checkout/fulfillment
-          successUrl: 'https://be100you.com/success',
-          cancelUrl: 'https://be100you.com/canceled',
-        })
-        .then(function (result) {
-          if (result.error) {
-            // If `redirectToCheckout` fails due to a browser or network
-            // error, display the localized error message to your customer.
-            var displayError = document.getElementById('error-message');
-            displayError.textContent = result.error.message;
-          }
-        });
-      });
-    })();
-    </script>
+    -->
 
     <script>
     // Get the modal
