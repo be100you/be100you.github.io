@@ -96,7 +96,7 @@ ul {
     /* border: solid 1px white; */
     width: 100% !important;
     max-width: 575px;
-    margin: 0px !important;
+    margin: 10px 0 !important;
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify !important;
@@ -109,6 +109,10 @@ ul {
 
 .bg-exe {
     background: linear-gradient(to right, #ca4444, #a57621) !important;
+}
+
+.bg-rst {
+    background: linear-gradient(to right, #6144ca, #256b6b) !important;
 }
 
 .i-s {
