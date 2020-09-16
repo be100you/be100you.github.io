@@ -91,6 +91,24 @@ ul {
     perspective: 1000px;
 }
 
+.i-t {
+    background: #00000000 !important;
+    /* border: solid 1px white; */
+    width: 90% !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify !important;
+
+}
+
+.bg-nut {
+    background: linear-gradient(to right, #a39a21, #256b6b) !important;
+}
+
+.bg-exe {
+    background: linear-gradient(to right, #ca4444, #a57621) !important;
+}
+
 .i-s {
     display: inline-block;
     box-sizing: border-box;
