@@ -19,7 +19,6 @@
     <meta name="theme-color" content="#141414">
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <div class="author-photo">
         <a class="js-scroll-trigger" href="../bio">
             <img src="../img/profile-circle.png">
@@ -56,18 +55,18 @@
         Liste d'exercices et conseils d'exécution
     </h3>
 
-    <script>
+
+
+
+
+
+    <!-- <script>
         function findAction(e) {
             if (e.keyCode == 13 || e === 13) {
                 window.find(document.getElementById('search').value, false, false, true);
                 return false;
             }
         }
-        var options = {
-          valueNames: [ 'name', 'description', 'category' ]
-        };
-
-        var featureList = new List('lovely-things-list', options);
     </script>
     <div style="position: fixed; bottom: 0px; width: 100%; height: 30px; padding: 8px 0; margin: 0 0 0 -8px; background: #000000B0; vertical-align: middle;">
         <center>
@@ -77,29 +76,27 @@
         </center>
     </div>
 
-    <div id="container">
-        <div class="example-page">
-            <div id="main">
-                <div id="lovely-things-list">
-                    <input class="search" placeholder="Search" />
-                    <ul class="list">
-                    <li>
-                    <h4><span class="name">Monkey Island 2: LeChuck's Revenge</span> <span class="category">Game</span></h4>
-                    </li>
-                    <li>
-                    <h4><span class="name">Good Coffee</span> <span class="category">Beverage</span></h4>
-                    </li>
-                    <li>
-                    <h4><span class="name">Full Throttle</span> <span class="category">Game</span></h4>
-                    </li>
-                    <li>
-                    <h4><span class="name">Brooklyn Lager</span> <span class="category">Beverage</span></h4>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="lovely-things-list">
+        <input class="search" placeholder="Search" />
+        <ul class="list">
+        <li>
+        <h4><span class="name">Monkey Island 2: LeChuck's Revenge</span> <span class="category">Game</span></h4>
+        </li>
+        <li>
+        <h4><span class="name">Good Coffee</span> <span class="category">Beverage</span></h4>
+        </li>
+        <li>
+        <h4><span class="name">Full Throttle</span> <span class="category">Game</span></h4>
+        </li>
+        <li>
+        <h4><span class="name">Brooklyn Lager</span> <span class="category">Beverage</span></h4>
+        </li>
+        </ul>
+    </div> -->
+
+
+
+
 
     <ul>
         <li class="i-v bg-ig-exe">
@@ -252,6 +249,14 @@
     <script src="../config/jquery/jquery.min.js"></script>
     <script src="../config/jquery-easing/jquery.easing.min.js"></script>
     <script src="../config/grayscale.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        var options = {
+          valueNames: [ 'name', 'description', 'category' ]
+        };
+
+        var featureList = new List('lovely-things-list', options);
+    </script> -->
 </body>
 
 </html>
