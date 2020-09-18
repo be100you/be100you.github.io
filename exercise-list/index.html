@@ -19,6 +19,7 @@
     <meta name="theme-color" content="#141414">
 </head>
 <body>
+    <script type="text/javascript" src="../config/list.min.js"></script>
     <div class="author-photo">
         <a class="js-scroll-trigger" href="../bio">
             <img src="../img/profile-circle.png">
@@ -62,6 +63,11 @@
                 return false;
             }
         }
+        var options = {
+            valueNames: [ 'name', 'city' ]
+        };
+
+        var hackerList = new List('hacker-list', options);
     </script>
     <div style="position: fixed; bottom: 0px; width: 100%; height: 30px; padding: 8px 0; margin: 0 0 0 -8px; background: #000000B0; vertical-align: middle;">
         <center>
@@ -69,6 +75,25 @@
             &nbsp;&nbsp;
             <button onclick="findAction(13)" style="background: none; color: inherit; border: none ; padding: 0; font: inherit; cursor: pointer; outline: inherit;"><i class="fas fa-search"></i></button>
         </center>
+    </div>
+
+    <!-- class="search" automagically makes an input a search field. -->
+      <input class="search" placeholder="Search" />
+    <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
+      <button class="sort" data-sort="name">
+        Sort
+      </button>
+    <div id="hacker-list">
+      <ul class="list">
+        <li>
+           <h3 class="name">Jonny</h3>
+           <p class="city">Stockholm</p>
+        </li>
+        <li>
+          <h3 class="name">Jonas</h3>
+          <p class="city">Berlin</p>
+        </li>
+      </ul>
     </div>
 
     <ul>
