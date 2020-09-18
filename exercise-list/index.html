@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#141414">
 </head>
 <body>
-    <script type="text/javascript" src="../config/list.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <div class="author-photo">
         <a class="js-scroll-trigger" href="../bio">
             <img src="../img/profile-circle.png">
@@ -64,10 +64,10 @@
             }
         }
         var options = {
-            valueNames: [ 'name', 'city' ]
+          valueNames: [ 'name', 'description', 'category' ]
         };
 
-        var hackerList = new List('hacker-list', options);
+        var featureList = new List('lovely-things-list', options);
     </script>
     <div style="position: fixed; bottom: 0px; width: 100%; height: 30px; padding: 8px 0; margin: 0 0 0 -8px; background: #000000B0; vertical-align: middle;">
         <center>
@@ -77,23 +77,28 @@
         </center>
     </div>
 
-    <!-- class="search" automagically makes an input a search field. -->
-      <input class="search" placeholder="Search" />
-    <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-      <button class="sort" data-sort="name">
-        Sort
-      </button>
-    <div id="hacker-list">
-      <ul class="list">
-        <li>
-           <h3 class="name">Jonny</h3>
-           <p class="city">Stockholm</p>
-        </li>
-        <li>
-          <h3 class="name">Jonas</h3>
-          <p class="city">Berlin</p>
-        </li>
-      </ul>
+    <div id="container">
+        <div class="example-page">
+            <div id="main">
+                <div id="lovely-things-list">
+                    <input class="search" placeholder="Search" />
+                    <ul class="list">
+                    <li>
+                    <h4><span class="name">Monkey Island 2: LeChuck's Revenge</span> <span class="category">Game</span></h4>
+                    </li>
+                    <li>
+                    <h4><span class="name">Good Coffee</span> <span class="category">Beverage</span></h4>
+                    </li>
+                    <li>
+                    <h4><span class="name">Full Throttle</span> <span class="category">Game</span></h4>
+                    </li>
+                    <li>
+                    <h4><span class="name">Brooklyn Lager</span> <span class="category">Beverage</span></h4>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <ul>
