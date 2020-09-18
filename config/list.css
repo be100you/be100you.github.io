@@ -115,6 +115,10 @@ ul {
     background: linear-gradient(to right, #6144ca, #256b6b) !important;
 }
 
+.bg-ig-exe {
+    background: linear-gradient(to right, #AB4E13, #8A9944) !important;
+}
+
 .i-s {
     display: inline-block;
     box-sizing: border-box;
@@ -281,7 +285,7 @@ ul {
 .i-v span {
     float: none;
     width: 100%;
-    max-height: 200px;
+    height: 250px;
 }
 
 .i-v a div {
