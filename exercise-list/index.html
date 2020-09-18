@@ -55,9 +55,19 @@
         Liste d'exercices et conseils d'exécution
     </h3>
 
-    <div style="position: fixed; bottom: 0px; width: 100%; height: 30px; padding-top: 5px; background: #000000B0; vertical-align: middle;">
+    <script>
+        function findAction(e) {
+            if (e.keyCode == 13 || e === 13) {
+                window.find(document.getElementById('search').value, false, false, true);
+                return false;
+            }
+        }
+    </script>
+    <div style="position: fixed; bottom: 0px; width: 100%; height: 30px; padding: 8px 0; margin: 0 0 0 -8px; background: #000000B0; vertical-align: middle;">
         <center>
-            <input style="height: 25px; vertical-align: middle; width: 50%; max-width: 300px; background: #a64c14c0; border: 0; color: white; font-size: 17px; text-align: center;" id="search"></input>&nbsp;&nbsp;&nbsp;<button onclick="window.find(document.getElementById('search').value, false, false, true, false, false, true);" style="background: none; color: inherit; border: none ; padding: 0; font: inherit; cursor: pointer; outline: inherit;"><i class="fas fa-search"></i></button>
+            <input type="text" onkeypress="findAction(event)" style="height: 25px; vertical-align: middle; width: 40%; min-width: 180px; max-width: 300px; background: #FFFFFFc0; border: 0; font-size: 17px; text-align: center;" id="search" placeholder="Rechercher..."></input>
+            &nbsp;&nbsp;
+            <button onclick="findAction(13)" style="background: none; color: inherit; border: none ; padding: 0; font: inherit; cursor: pointer; outline: inherit;"><i class="fas fa-search"></i></button>
         </center>
     </div>
 
