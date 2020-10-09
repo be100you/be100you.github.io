@@ -6,12 +6,8 @@
   box-sizing: border-box;
 }
 
-html,
 body {
-  height: 100%
-}
-
-body {
+  overflow: visible;
   background: #454c4f;
   font: 1em/1.5 'Droid Sans', sans-serif;
 }
@@ -19,9 +15,9 @@ body {
 .pricing {
   @include translate(-49%, -49.1%);
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 310px;
+  left: 0;
+  top: 0;
+  min-width: 310px;
   font-size: 0;
   opacity: 1;
   transition: opacity .2s ease;
